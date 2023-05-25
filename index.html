@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href= "desktop.css" media="screen and (min-width: 800px)">
+    <title>Matías Moyano</title>
+</head>
+<body>
+    <header>
+        <div class="logo">@MatoTeam</div>
+        <div id="abrir" class="abrir-menu"></div>
+        <nav class="nav" id="nav">
+            <div class="cerrar-menu" id="cerrar">Cerrar</div>
+            <ul class="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#proyectsTable">Proyectos</a></li>
+                <li><a href="#" id="language">Lenguaje<span></span></a></li>
+                <li><a href="#contact"> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <div class="language" id="language-menu">
+        <ul>
+            <li>Español <span class="argflag"></span> </li>
+            <li>English <span class="ukflag"></span> </li>
+        </ul>
+    </div>
+
+    <section class="home" id="home">
+            <h1 class="name">¡Hola! Mi nombre es</h1>
+            <h2 class="name-user">Matías Moyano</h1>
+            <p class="name-description">Soy un desarrollador de Frontend. Soy un apasionado del diseño y las tecnologías. Actualmente estoy estudiando y practicando las tecnologías Frontend.</p>
+            <img src="./me.jpeg" alt="me" class="photo">
+    </section>
+
+    <section class="about" id="about">
+        <h2>Acerca de mí</h2>
+        <p class="about-description">Nací en Buenos Aires, Argentina. Tengo 22 años y toda mi vida fuí un apasionado por las artes visuales y la tecnología. Actualmente estoy estudiando Desarrollo Web en el programa "Full Stack Developer" de Platzi. </p>
+    </section>
+
+    <section class="proyects-table" id="proyectsTable">
+        <h4>Proyectos</h4>
+            <article class="proyects-container">
+                <div class="folder" id="weatherApp">
+                    <img src="./icons/folder-svgrepo-com.svg" alt="folder" class="folder-img">
+                    <p class="proyect-name" id="proyectTitle">weatherApp</p>
+                </div>
+                <div class="folder" id="Batatabit">
+                    <img src="./icons/folder-svgrepo-com.svg" alt="folder" class="folder-img">
+                    <p class="proyect-name" id="proyectTitle">Batatabit</p>
+                </div>
+                <div class="folder" id="calculator">
+                    <img src="./icons/folder-svgrepo-com.svg" alt="folder" class="folder-img">
+                    <p class="proyect-name" id="proyectTitle">Calculator</p>
+                </div>
+                 <div class="folder" id="YardSale">
+                    <img src="./icons/folder-svgrepo-com.svg" alt="folder" class="folder-img">
+                    <p class="proyect-name" id="proyectTitle">YardSale</p>
+                </div>
+                <div class="folder" id="API">
+                    <img src="./icons/folder-svgrepo-com.svg" alt="folder" class="folder-img">
+                    <p class="proyect-name" id="proyectTitle">API</p>
+                </div>
+                <!-- <div class="folder">
+                    <img src="./icons/folder-svgrepo-com.svg" alt="folder" class="folder-img">
+                    <p class="proyect-name" id="proyectTitle"></p>
+                </div>
+                <div class="folder">
+                    <img src="./icons/folder-svgrepo-com.svg" alt="folder" class="folder-img">
+                    <p class="proyect-name" id="proyectTitle"></p>
+                </div>
+                <div class="folder">
+                    <img src="./icons/folder-svgrepo-com.svg" alt="folder" class="folder-img">
+                    <p class="proyect-name" id="proyectTitle"></p>
+                </div> -->
+            </article>
+
+            <div class="open-file" id="openFile">
+                <div class="top-file">
+                    <p class="file-title" id="fileTitle"></p>
+                    <button class="minimize" id="minimize">_</button>
+                    <button class="close-menu" id="exitFile">X</button>
+                </div>
+                <div class="file-icon" id="fileIcon"></div>
+                <p class="file-description" id="fileDescription"></p>
+                <p class="tools-used" id="toolsUsed"></p>
+                <button class="open-proyect" id="openProyect">Redireccionar</button>
+            </div>
+
+            <div class="open-folder" id="openFolder">
+                <div class="top-folder">
+                    <p class="title-folder">Title</p>
+                    <button class="minimize">_</button>
+                    <button class="close-menu" id="closeMenu">X</button>
+                </div>
+                <img src="./icons/pointer-svgrepo-com.svg" alt="Pointer Icon" srcset="" class="folder-icon">
+                <p class="folder-description">Abre un proyecto dándole Click</p>
+                <button class="ok-button" id="okButton">Ok</button>
+                <button class="cancel-button" id="cancel">Cancel</button>
+            </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <h6>Contacto</h6>
+        <p>Actualmente estoy dispuesto a escuchar ofertas, si tienes alguna consulta o propuesta, no dudes en contactarme!</p>
+        <form action="email" class="form">
+            <label for="inputName">
+                <input type="text" class="input-name" id="inputName">Tu nombre
+            </label>
+            <label for="inputEmail">
+                <input type="email" name="your email" placeholder="Email" id="inputEmail">Mail
+            </label>
+            <label for="message">
+                <input type="text" name="message" id="message" class="message">Mensaje
+            </label>
+        </form>
+    </section>
+</main>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.google.com/" target="_blank"> <span class="email-icon"></span> Google</a> <br>
+            <!-- <a href="https://twitter.com/"> <span class="twitter-icon"></span>Twitter</a> <br> -->
+            <a href="https://www.linkedin.com/in/matias-joel-moyano-837a87242/" target="_blank"> <span class="linkedin-icon"></span> Linkedin</a> <br>
+            <a href="https://instagram.com/moyano.matias_" target="_blank"> <span class="instagram-icon"></span> Instagram</a> <br>
+            <a href="https://github.com/polybius10" target="_blank"> <span class="github-icon"></span> Github</a> <br>
+            <a href="https://open.spotify.com/user/negrato123" target="_blank"> <span class="spotify-icon"></span> Spotify</a>
+        </div>
+
+        <div class="allRightReserved">
+            <p>Mato Team (allRightReserved)</p>
+        </div>
+    </footer>
+</body>
+<script src="index.js" ></script>
+</html>

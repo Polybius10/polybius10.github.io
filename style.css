@@ -1,0 +1,79 @@
+:root{
+    --primary-color: #1c1c1c;
+    --secondary-color: rgb(255, 217, 0);
+    --another-color: #CFFCEF;
+    --hover-color: rgb(238, 11, 238);
+    --second-font: 'Roboto Mono', monospace;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    background-color: #1c1c1c;
+    color: var(--another-color);
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    font-family: var(--second-font);
+    border-bottom: 1px solid var(--another-color);
+}
+
+.logo {
+    position: absolute;
+    left: 22px;
+    font-size: 2rem;
+}
+
+.abrir-menu {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    right: 50px;
+    top: 12px;
+    background-image: url(./icons/align-right-square-2-svgrepo-com.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    width: 50vw;
+    height: 1000%;
+    left: 50%;
+    background-color:gray;
+}
+
+.nav-list {
+    position: absolute;
+    display: flex;
+    top: 15%;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    text-decoration-line: none;
+}
+.nav-list li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #CFFCEF;
+}
+main {
+    
+}
+
